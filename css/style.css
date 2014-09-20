@@ -1,0 +1,5 @@
+.intro .column p { font-size: 15px; line-height: 30px; text-align: center;}
+
+.contentslider li p { font-size: 16px; line-height: 30px;}
+.bx-wrapper .bx-pager.bx-default-pager a { background: #ddd; border-color: #ddd;}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:hover { background: #999; border-color: #999;}
