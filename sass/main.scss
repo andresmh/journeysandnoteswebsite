@@ -1,0 +1,752 @@
+/* --- import sass library --- */
+
+@import "lib/helpers";
+@import "lib/css3";
+@import "lib/normalize";
+@import "lib/reset";
+@import "lib/vars";
+@import "lib/box";
+@import "lib/font";
+@import "lib/contentslider";
+@import "lib/slider";
+@import "lib/nav";
+
+/* --- standard  --- */
+
+body {
+	font-family: $main-fonts;
+	font-weight: 300;
+	color: #444;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+	color: $blue;
+
+	@include transition(0.5s ease);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $main-fonts;
+}
+
+p {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 300;
+	font-family: $main-fonts;
+	margin: 1em 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 28px;
+	line-height: 42px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 34px;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+code {
+	display: block;
+	width: auto;
+	padding: 20px;
+	background: #eee;
+}
+
+input[type="text"] {
+	padding: 12px;
+	border: 0;
+	text-family: $main-fonts;
+	width: 300px;
+	@include border-radius(3px);
+}
+
+/* --- general  --- */
+
+.headline {
+	h1,h2,h3,h4,h5 {
+		text-align: center;
+		letter-spacing: 5px;
+		color: white;
+		font-weight: 400;
+	}
+
+	.spacer {
+		margin: 30px auto;
+	}
+}
+
+.column {
+	float: left;
+	display: block;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.one {
+	width: 100%;
+	margin-right: 0 !important;
+}
+
+.two {
+	width: 49%;
+	margin-right: 2%;
+}
+
+
+.three {
+	width: 32%;
+	margin-right: 2%;
+}
+
+.one-three {
+	width: 32%;
+	margin-right: 2%;
+}
+
+.two-three {
+	width: 66%;
+	margin-right: 2%;
+}
+
+.four {
+	width: 23.5%;
+	margin-right: 2%;
+}
+
+.one-four {
+	width: 23.5%;
+	margin-right: 2%;
+}
+
+.three-four {
+	width: 74.5%;
+	margin-right: 2%;
+}
+
+.five {
+	width: 18.4%;
+	margin-right: 2%;
+}
+
+.one-five {
+	width: 18.4%;
+	margin-right: 2%;	
+}
+
+.two-five {
+	width: 36.8%;
+	margin-right: 2%;
+}
+
+.three-five {
+	width: 61.2%;
+	margin-right: 2%;
+}
+
+.four-five {
+	width: 79.6%;
+	margin-right: 2%;
+}
+
+.last {
+	margin-right: 0 !important;
+}
+
+.parallax {
+	background-size: 100%;	
+}
+
+.inner {
+	margin: 0 auto;
+	padding: 0 10%;
+	@extend %clear-after;
+
+	&.small {
+		max-width: 1200px;
+		padding: 0;
+	}
+}
+
+.button {
+	display: inline-block;
+	padding: 12px 40px;
+	background: $yellow;
+	color: white;
+	border: 0;
+	border-bottom: 2px solid rgba(0,0,0,0.35);
+	@include border-radius(3px);
+
+	&.left {
+		float: left;
+	}
+
+	&.right {
+		float: right;
+	}
+
+	&.special {
+		background: transparent;
+		border: 2px solid white;
+
+		&:hover {
+			background: rgba(255,255,255,0.1);
+		}
+	}
+
+	&.red {
+		background: $red;
+	}
+
+	&.blue {
+		background: $blue;
+	}
+
+	&.yellow {
+		background: $yellow;
+	}
+
+	&.green {
+		background: $green;
+	}
+
+	&.purple {
+		background: $purple;
+	}
+
+	&.orange {
+		background: $orange;
+	}
+}
+
+.spacer {
+	width: 100px;
+	height: 5px;
+	background: #fff;
+	display: block;
+	margin: 50px auto;
+	@include box-shadow(0 1px 1px rgba(0,0,0,0.5));
+}
+
+.row {
+	width: 100%;
+	@extend %clear-after;
+	padding: 100px 0;
+	position: relative;
+	background: white;
+
+	&.colored {
+		background: $red;
+	}
+
+	&.light {
+		background: darken(white,5%);
+	}
+
+	&.dark {
+		background: #111;
+	}
+
+	&.extra {
+		background: $blue;
+	}
+}
+
+.title-row {
+	padding: 50px 0;
+	background: #fff;
+	line-height: 32px;
+
+	h1,h2,h3,h4,h5 {
+		padding-left: 40px;
+		border-left: 2px solid #eee;
+		display: inline;
+	}
+
+	p {
+		display: inline;
+		padding-left: 50px;
+		margin: 0;
+		color: #bbb;
+		font-style: italic;
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: 300;
+		position: relative;
+		bottom: 3px;
+	}
+}
+
+.arrow {
+	border-bottom: 20px solid #FFFFFF;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+
+	&.light {
+		border-bottom-color: darken(white,5%) !important;
+	}
+}
+
+/* --- header --- */
+
+ header {
+ 	padding: 200px;
+ 	position: relative;
+ 	text-align: left;
+ 	background: block;
+ 	@extend %clear-after;
+
+ 	h1 {
+ 		font-size: 64px;
+ 		color: white;
+ 		line-height: 64px;
+ 		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+ 	}
+
+ 	p {
+ 		font-size: 24px;		
+ 		line-height: 36px;
+ 		font-weight: 400;
+ 		color: white;
+ 		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+ 	}
+
+ 	.backstretch {
+
+ 	}
+}
+
+/* --- header --- */
+
+.intro {
+	.column {
+		text-align: center;
+
+		i {
+			display: block;
+			margin: 0 auto;
+			width: 128px;
+			height: 128px;
+			border: 2px solid lighten($blue,40%);
+			text-align: center;
+			line-height: 132px;
+			font-size: 54px;
+			color: lighten($red,10%);
+			@include border-radius(100%);
+			margin-bottom: 30px;
+		}
+
+		h1,h2,h3,h4,h5 {
+			font-family: $special-fonts;
+			font-weight: 400;
+			color: #4a596c;
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 15px;
+			color: lighten(#4a596c,30%);
+			font-weight: 300;
+			line-height: 30px;
+			padding: 0 20px;
+		}
+	}
+}
+
+.notice {
+	.inner {
+		.column {
+			margin-bottom: 0;
+
+			h1,h2,h3,h4,h5 {
+				color: white;
+				margin: 0;
+				font-size: 36px;
+				font-weight: 300;
+				line-height: 49px;
+			}
+		}
+	}
+}
+
+.about {
+	.column {
+		img {
+		}
+
+		h1,h2,h3,h4,h5 {
+			color: white;
+			margin: 0;
+			font-size: 36px;
+			font-weight: 500;
+			line-height: 49px;
+			padding-left: 50px;
+			margin: 30px 0;
+		}		
+
+		p {
+			padding: 0 50px;
+			font-size: 22px;
+			line-height: 40px;
+			font-weight: 400;
+			color: white;
+			margin: 30px 0;
+		}
+	}
+}
+
+.pricetable {
+
+	.column {
+		margin: 0;
+		border-right: 1px solid #eee;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+
+		&.three {
+			width: 33.2%;
+		}
+
+		&.four {
+			width: 24.8%;
+		}
+
+		.header {
+			text-align: center;
+			padding: 20px 0;
+			background: #eee;
+			font-weight: 500;
+			font-size: 18px;
+			color: #aaa;
+		}
+
+		.price {
+			padding: 50px 0;
+			text-align: center;
+			font-size: 36px;
+			font-weight: 400;
+			color: $red;
+			background: #fafafa;
+		}
+
+		.checkout {
+			padding: 20px;
+			text-align: center;
+			border-top: 1px solid #eee;
+
+			a {
+				padding: 15px 0;
+				width: 80%;
+			}
+		}
+
+		.content {
+			ul {
+				li {
+					list-style: none;
+					line-height: 56px;
+					padding: 0 20px;
+					font-size: 14px;
+					border-top: 1px solid #eee;
+					text-align: center;
+					color: #999;
+
+					&:nth-child(2n){
+						background: #fafafa;
+					}
+				}
+			}
+		}
+
+		&:nth-child(2){
+
+			.header {
+				background: $red;
+				color: white;
+			}
+		}
+
+		&:first-child {
+			border-left: 1px solid #eee;
+		}
+	}
+}
+
+.mail {
+	text-align: center;
+
+	h1,h2,h3,h4,h5 {
+		color: white;
+		margin: 0;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 49px;
+		margin: 0 0 30px 0;
+	}			
+
+	input {
+		padding: 15px 40px;
+
+		&[type="text"]{
+			padding: 15px;
+			margin-right: 15px;
+			color: #888;
+		}
+	}
+}
+
+.tabs {
+	p {
+		font-size: 14px;
+		color: #97a6b8;
+	}
+}
+
+.contentslider {
+	max-width: 800px;
+	@extend %clear-after;
+
+	li {
+		img {
+			@include border-radius(100%);
+			margin: 0 auto;
+		}
+
+		p {
+			font-size: 15px;
+			line-height: 30px;
+			font-weight: 300;
+			color: #97a6b8;			
+			max-width: 860px;
+			margin: 30px auto;
+		}
+
+		h1,h2,h3,h4,h5 {
+			font-weight: 400;
+			color: #4a596c;
+			font-size: 18px;
+			margin: 30px 0;
+			font-family: $special-fonts;
+		}
+	}
+}
+
+.imageslider {
+	@extend %clear-after;
+
+	li {
+		p {
+			font-size: 15px;
+			line-height: 30px;
+			font-weight: 300;
+			color: #97a6b8;			
+			max-width: 860px;
+			margin: 30px auto;
+		}
+
+		h1,h2,h3,h4,h5 {
+			font-weight: 400;
+			color: #4a596c;
+			font-size: 18px;
+			margin: 30px 0;
+			font-family: $special-fonts;
+		}
+	}
+}
+
+footer {
+	border-bottom: 20px solid $blue;
+
+	.column {
+		margin-bottom: 0;
+
+		p {
+			margin: 0;
+			line-height: 40px;
+			color: white;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		ul {
+			li {
+				display: block;
+				float: right;
+
+				a {
+					float: left;
+					display: block;
+					color: white;
+					font-weight: 600;
+					margin-left: 40px;
+
+					i {
+						margin-right: 10px;
+						display: inline-block;						
+						width: 36px;
+						height: 36px;
+						line-height: 36px;
+						text-align: center;
+						border: 2px solid white;
+						color: white;
+						@include border-radius(100%);
+						@include transition(0.3s ease);
+						margin-left: 5px;					
+					}
+
+					&:hover {
+						i {
+							background: rgba(255,255,255,0.15);
+							@include transition(0.3s ease);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 319px){
+
+	p {
+		font-size: 16px !important;
+		line-height: 28px !important;
+	}
+
+	h1,h2,h3,h4,h5 {
+		padding: 0 !important;
+	}
+
+	header {
+		padding: 0;
+
+		h1 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.column {
+		float: none;
+		width: 90% !important;
+		padding: 5%;
+		text-align: center;
+	}
+
+	.button {
+		width: auto;
+		float: none !important;
+	}
+
+	.pricetable {
+		.column	 {
+			border-bottom: 0;
+			border-top: 0;
+		}
+	}
+
+	footer {
+		.column {
+			li {
+				float: none !important;
+				margin-left: 0;
+				margin-bottom: 10px;
+
+				a {
+					float: none !important;
+					margin-left: 0 !important;
+				}
+			}
+		}
+	}
+
+}
+
+.documentation {
+	header {
+		padding: 0;
+		background: $red;
+
+		.inner {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			@extend %clear-after;
+		}
+
+		ul {
+			li {
+				float: left;
+				margin-right: 20px;
+
+				a {
+					color: #fff;
+					font-size: 16px;
+					font-weight: 500;
+					font-family: $special-fonts;
+				}
+			}
+		}
+	}
+
+	.example {
+		min-height: 200px;
+	}
+
+	.content {
+		background: #eee;
+	}
+
+	#grids2 {
+		padding-top: 0 !important;
+	}
+
+	#grids,
+	#grids2 {
+		.column {
+			min-height: 150px;
+			background: #eee;
+		}
+	}
+
+	#icons {
+		background: $blue;
+		text-align: center;
+
+		i {
+			color: white;
+			font-size: 48px;
+		}
+	}
+}
