@@ -7,3 +7,25 @@
 .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:hover { background: #999; border-color: #999;}
 
 .row { padding: 80px 0;}
+
+form { position: relative; text-align: center; width: 100%;}
+
+
+.mail input {
+  padding: 15px 20px;
+  margin: 5px 0;
+}
+.mail input[type="text"] {
+  color: #888;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 0;
+  text-family: "Cutive Mono", sans-serif;
+  width: 80%;
+  max-width: 300px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
