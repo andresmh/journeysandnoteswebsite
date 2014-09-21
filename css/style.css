@@ -1,7 +1,7 @@
 .intro .column h3 {font-size: 24px;}
 
-.intro .column p { font-size: 15px; line-height: 30px; text-align: center;}
+.intro .column p { font-size: 15px; line-height: 33px !important; text-align: center;}
 
-.contentslider li p { font-size: 16px; line-height: 30px;}
+.contentslider li p { font-size: 15px; line-height: 33px !important;}
 .bx-wrapper .bx-pager.bx-default-pager a { background: #ddd; border-color: #ddd;}
 .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:hover { background: #999; border-color: #999;}
