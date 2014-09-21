@@ -3132,8 +3132,10 @@ input[type="text"] {
   background: white;
 }
 .row-colored {
+  width: 100%;
+  position: relative;
   background: #006168;
-  padding: 20px;
+  padding: 20px 0;
 }
 .row.light {
   background: #f2f2f2;

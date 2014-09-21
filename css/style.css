@@ -5,3 +5,5 @@
 .contentslider li p { font-size: 15px; line-height: 33px !important;}
 .bx-wrapper .bx-pager.bx-default-pager a { background: #ddd; border-color: #ddd;}
 .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:hover { background: #999; border-color: #999;}
+
+.row { padding: 80px 0;}
