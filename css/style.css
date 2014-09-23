@@ -1,6 +1,6 @@
 .intro .column h3 {font-size: 24px;}
 
-.intro .column p { font-size: 15px; line-height: 33px !important; text-align: center;}
+.intro .column p { font-size: 16px; line-height: 32px !important; text-align: center;}
 
 .contentslider li p { font-size: 15px; line-height: 33px !important;}
 .bx-wrapper .bx-pager.bx-default-pager a { background: #ddd; border-color: #ddd;}
@@ -32,8 +32,11 @@ input[type="text"] {
 
 .logo {padding-bottom: 40px;}
 
+.about .column h3 { color: #DC8256; text-align: center; padding: 0 50px; font-size: 30px; line-height: 34px;}
+.about .column p { color: #777; text-align: left; font-size: 16px; line-height: 32px; margin: 25px 0; }
+/*.about .column .screenshot-container { text-align: center; width: 100%;} 
+*//*.about .column .screenshot-container img {height: 650px;}*/
 
-.about .column h3 { color: #DC8256; }
-.about .column p { color: #777; text-align: justify; font-size: 20px; line-height: 30px; margin: 25px 0; }
-.about .column .screenshot-container { text-align: center; width: 100%;} 
-.about .column .screenshot-container img {height: 650px;}
+.legal p { font-size: 11px; line-height: 34px !important;}
+.legal p span { margin: 0 10px; white-space: nowrap; }
+.legal p span a { color: white; }
