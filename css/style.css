@@ -1,3 +1,18 @@
+/*
+ * blue: #00939C;
+ * light blue: #96C9BC;
+ * dark blue: #003437;
+ * sage: #9BCE7E;
+ * goldenrod: #F8CA26;
+ * rust: #DC8256;
+ * dark rust: #a94f23;
+ * pale orange: #E2A15A;
+ * grey: #E6E7E8;
+ * dark-grey: #6C766D;
+ * darker-grey: #3b413c;
+ */ 
+
+
 .intro .column h3 {font-size: 24px;}
 
 .intro .column p { font-size: 16px; line-height: 32px !important; text-align: center;}
@@ -22,7 +37,7 @@ form { position: relative; text-align: center; width: 100%;}
 input[type="text"] {
   padding: 12px;
   border: 0;
-  text-family: "Cutive Mono", sans-serif;
+  font-family: "Cutive Mono", sans-serif;
   width: 80%;
   max-width: 300px;
   -webkit-border-radius: 3px;
@@ -32,11 +47,25 @@ input[type="text"] {
 
 .logo {padding-bottom: 40px;}
 
+/* mail */
+
+.mail h1 { font-size: 45px; }
+.mail h5 { padding: 0 50px; margin-bottom: 30px; }
+.mail p { color: white;}
+.mail p a {color: white;}
+
+.mail form { margin: 40px 0 80px 0;}
+.mail input[type="email"] { width: 350px; height: 46px; line-height: 46px; color: #888;  padding: 0 10px; border: none; margin: 0 10px; border-radius: 4px; }
+.mail input[type="submit"] {background: #9BCE7E; border: none; border-radius: 4px; color: white;}
+.mail label span { font-size: 0; width: 0; padding: 0; margin: 0;}
+
+/* about */
+
 .about .column h3 { color: #DC8256; text-align: center; padding: 0 50px; font-size: 30px; line-height: 34px;}
 .about .column p { color: #777; text-align: left; font-size: 16px; line-height: 32px; margin: 25px 0; }
 /*.about .column .screenshot-container { text-align: center; width: 100%;} 
 *//*.about .column .screenshot-container img {height: 650px;}*/
 
 .legal p { font-size: 11px; line-height: 34px !important;}
-.legal p span { margin: 0 10px; white-space: nowrap; }
+.legal p span { margin: 0 10px; white-space: nowrap; height: 40px; line-height: 40px; }
 .legal p span a { color: white; }
