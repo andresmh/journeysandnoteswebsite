@@ -51,8 +51,8 @@ input[type="text"] {
 
 .mail .inner { }
 .mail h1 { font-size: 45px; }
-.mail h5 { margin-bottom: 30px; }
-.mail p { color: white; font-size: 15px; line-height: 33px !important; width: 80%; max-width: 475px; margin: 0 auto; text-align: justify; }
+.mail h5 { margin: 45px 0; }
+.mail p { color: white; font-size: 15px; line-height: 33px !important; width: 80%; max-width: 475px; margin: 0 auto; text-align: left; }
 .mail p a {color: white; text-shadow: 1px 1px 2px white;}
 .mail p a:hover { text-shadow: 2px 2px 3px white;}
 
