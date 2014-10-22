@@ -10,7 +10,7 @@
  * grey: #E6E7E8;
  * dark-grey: #6C766D;
  * darker-grey: #3b413c;
- */ 
+ */
 
 
 .intro .column h3 {font-size: 24px;}
@@ -48,6 +48,8 @@ input[type="text"] {
 .logo {padding-bottom: 40px;}
 .appLogo{ position: absolute; left: -180px; width: 180px; height: auto;}
 
+.store-links { padding-top: 25px; }
+
 /* mail */
 
 .mail .inner { }
@@ -68,8 +70,8 @@ input[type="text"] {
 
 .about .column h3 { color: #DC8256; text-align: center; padding: 0 50px; font-size: 30px; line-height: 34px;}
 .about .column p { color: #777; text-align: left; font-size: 16px; line-height: 32px !important; margin: 25px 0; }
-.about .column .img-container { text-align: center; width: 100%; display: block;  } 
-.about .column .img-container img { display: inline-block; width: 90%; min-width: 220px; max-width: 550px; } 
+.about .column .img-container { text-align: center; width: 100%; display: block;  }
+.about .column .img-container img { display: inline-block; width: 90%; min-width: 220px; max-width: 550px; }
 .about .column .screenshot-container img {width: 49%; min-width: 220px; max-width: 400px;}
 #stats {  margin: 60px 0;}
 #screenshot {margin: 60px 0;}
