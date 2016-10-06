@@ -79,7 +79,7 @@ input[type="text"] {
 .stat2{ display: none; }
 .row-new{ clear: both; }
 
-.paper-link { color: white; font-weight: bold; }
+.paper-link { color: white; font-weight: bold; text-decoration: underline; }
 
 #mode-stats {width: 80%; max-width: 400px;}
 
