@@ -79,6 +79,8 @@ input[type="text"] {
 .stat2{ display: none; }
 .row-new{ clear: both; }
 
+.paper-link { color: white; font-weight: bold; }
+
 #mode-stats {width: 80%; max-width: 400px;}
 
 .legal p { font-size: 11px; line-height: 34px !important; }
